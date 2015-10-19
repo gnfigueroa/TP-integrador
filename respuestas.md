@@ -9,7 +9,7 @@ los caracteres necesarios para cubrir algunos lenguajes, o tambien porque alguno
 
 **-Responda: ¿Cuando se reemplazan  los *trigraphs*? ¿Y los *digraphs*?.**
 
-Los **trigraphs** son reemplazados por el pre-procesador mientras que los **digraphs** son procesados durante el tokenizado.
+Los *trigraphs* son reemplazados por el pre-procesador mientras que los *digraphs* son procesados durante el tokenizado.
 
 
 **-Escriba la secuencia de lexemas a partir de la secuencia de caracteres.**
@@ -46,16 +46,21 @@ Una vez que se reemplazan los digrafos podemos ver que los corchetes y llaves so
 **Análisis Sintáctico**
 
 **-Arme el arbol de derivacion, a partir de la secuencia de tokens. Lea sobre BNF y busque el BNF de unidad de traduccion en A.13.** 
-**  Las reglas destacadas, inicializador y expresion.**
+**Las reglas destacadas, inicializador y expresion.**
 
 unidad-de-traduccion:
 
 unidad-de-traduccion declaracion-externa
+
 declaracion-externa definicion-de-funcion
-declaracion	definicion-de-funcion 
+
+declaracion	definicion-de-funcion
 especificadores-de-declaracion lista-de-declaradores-init; definicion-de-funcion
+
 especificador-de-tipo declarador-init; definicion-de-funcion
+
 int declarador;
+
 int declarador-directo;
 
 
@@ -79,7 +84,7 @@ En la primera expresion se utiliza para saber el tamaño del array y en la segund
 Ambos usos están aceptados en la definición  de la función sizeof así que es semánticamente correcto.
 
 **-Si es semanticamente correcto,indique que hace el programa, reponda dos partes:**
-** declaraciones,expresiones y sentencias. Temas destacados:arrays,sizeof,incializacion y conversiones automaticas.**
+**declaraciones,expresiones y sentencias. Temas destacados:arrays,sizeof,incializacion y conversiones automaticas.**
 
 El programa declara el prototipo de la funcion printf, en donde dice que recibe x cantidad de parametros de entrada.
 Dentro del main declara e inicializa un array de enteros, en el cual su unico elemento es el -1. 
